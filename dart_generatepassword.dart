@@ -2,11 +2,11 @@ import 'dart:math';
 
 void main() async{
 
-  int numberPasswords = 3;
+  int numberPasswords = 5;
   print( 'Gerando ${numberPasswords} senhas:');
   await Future.delayed(Duration(seconds: 2));
   for (int i = 0; i < numberPasswords; i++) {
-    print('Password ${i+1}: '+ generatePassword(20, true, true, true, true));
+    print('Password ${i+1}: '+ generatePassword(15, false, true, false, true));
   }
 
 }
